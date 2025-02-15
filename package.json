@@ -5,15 +5,27 @@
   "description": "Calculator.",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "package": "electron-packager . Calcu --platform=win32 --arch=x64 --icon=renderer/assets/icon.ico --out=dist/"
   },
   "author": "Carlsby",
   "license": "MIT",
   "dependencies": {
     "electron": "^34.2.0"
   },
+  "build": {
+    "appId": "com.calcu.app",
+    "win": {
+      "icon": "renderer/assets/icon.ico",
+      "target": "nsis"
+    },
+    "linux": {
+      "icon": "renderer/assets/icon.png"
+    }
+  },
   "devDependencies": {
     "autoprefixer": "^10.4.20",
+    "electron-packager": "^17.1.2",
     "electron-reloader": "^1.2.3",
     "postcss": "^8.5.2"
   }
