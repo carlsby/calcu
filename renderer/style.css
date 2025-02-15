@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/Poppins-Regular.ttf');
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+  height: 100vh;
+  background-color: #141414;
+}
+
+.display {
+    width: 100%;
+    border: 0;
+    text-align: right;
+    font-size: 36px;
+    font-weight: bold;
+    background-color: #141414;
+    color: white;
+}
+
+.btn-dark {
+    background-color: #3b3b3b;
+}
+
+.btn-secondary {
+    background-color: #575757;
+}
+
+.display:focus{
+    outline: none;
+}
